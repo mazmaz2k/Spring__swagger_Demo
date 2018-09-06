@@ -37,7 +37,7 @@ public class SpringSwaggerDemoApplication {
 	               .title("Spring REST Sample with Swagger")
 	               .description("Spring REST Sample with Swagger")
 	               .license("Apache License Version 2.0")
-	               .licenseUrl("https://github.com/afajem/afajem.github.io/blob/master/LICENSE")
+	               .licenseUrl("https://github.com/mazmaz2k/Spring__swagger_api/blob/master/LICENSE")
 	               .version("1.0")
 	               .build();
 	   }
