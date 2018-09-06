@@ -1,4 +1,4 @@
-# Spring__swagger_api
+# Spring boot swagger api
  spring-boot application with a REST controller, which expose a Swagger API catalog inventory
 The application needs to expose the following APIs:
 
