@@ -44,7 +44,7 @@ public class ItemController {
     
     
     /**
-     * Finds a items by <code>id</code>
+     * Finds an items by <code>id</code>
      * 
      * @param id items id
      * 
@@ -52,13 +52,13 @@ public class ItemController {
      */
     @RequestMapping(path = "/{id}", 
     				method = RequestMethod.GET)
-    @ApiOperation(value = "Fetch a item")
+    @ApiOperation(value = "Fetch an item")
     public Optional<Item> item(@PathVariable Long id) {
     	return itemRepository.findById(id);
     }
     
     /**
-     * Adds a item
+     * Adds an item
      * 
      * @param item
      * @return
@@ -66,7 +66,7 @@ public class ItemController {
     @RequestMapping(path = "/add",
     				method = RequestMethod.POST,
     				 consumes =  MediaType.APPLICATION_JSON_VALUE)
-    @ApiOperation(value = "Add a item")
+    @ApiOperation(value = "Add an item")
     public Item add(@RequestBody Item item) {
     	Item savedItem =  itemRepository.save(item);
     	
@@ -81,7 +81,7 @@ public class ItemController {
      */
     @RequestMapping(path = "/update",
     				method = RequestMethod.PUT)
-    @ApiOperation(value = "Update a item")
+    @ApiOperation(value = "Update an item")
     public Item update(@RequestBody Item item) {
     	Item saveditem =  itemRepository.save(item);
     	return saveditem;
