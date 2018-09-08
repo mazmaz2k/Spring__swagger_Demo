@@ -36,13 +36,13 @@ public class Item {
 		this.amount = amount;
 	}
 
-	
+    @ApiModelProperty(notes = "Item id", required = true)
 	public Long getId() {
 		return id;
 	}
 	
 	
-    @ApiModelProperty(notes = "The first name of a person", required = true)
+    @ApiModelProperty(notes = "Item name", required = true)
 	public String getItemName() {
 		return item_name;
 	}
@@ -53,7 +53,7 @@ public class Item {
 	}
 
 
-    @ApiModelProperty(notes = "The last name of a person", required = true)
+    @ApiModelProperty(notes = "The inventory code of the item", required = true)
 	public String getInventoryCode() {
 		return inventory_code;
 	}
@@ -64,7 +64,7 @@ public class Item {
 	}
 
 
-    @ApiModelProperty(notes = "The age of a person", required = true)
+    @ApiModelProperty(notes = "The amount of an item in inventory", required = true)
 	public int getAmount() {
 		return amount;
 	}
